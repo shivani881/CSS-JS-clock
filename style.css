@@ -39,6 +39,14 @@ transform: translateY(-3px);
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 @media only screen and (max-width:500px) {
+  body {
+    background-image: url("bg.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
     .clock {
         background-color: red;
         width: 13rem;
