@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("bg.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.clock {
+  background-color: red;
+  width: 17rem;
+  height: 17rem;
+  border: .7rem solid white;
+  border-radius: 50%;
+  position: relative;
+  margin: 50px auto;
+  padding: 2rem;
+}
+.clock-face{
+position: relative;
+width: 100%;
+height: 100%;
+transform: translateY(-3px);
+}
+.hand{
+    position: absolute;
+    width:50%;
+    height: 6px;
+    background-color: black;
+    top:50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all .05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+@media only screen and (max-width:500px) {
+    .clock {
+        background-color: red;
+        width: 13rem;
+        height: 13rem;
+        border: .5rem solid white;
+        border-radius: 50%;
+        position: relative;
+        margin: 50px auto;
+        padding: 2rem;
+      }
+    
+}
